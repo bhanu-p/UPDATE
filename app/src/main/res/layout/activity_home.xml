@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.delevere.cbook.HomeActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="fill_parent">
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:text="My Events"
+            android:radius="10dp"
+            android:background="@drawable/round"
+            android:padding="15dp"
+
+
+            android:id="@+id/imageView1"
+            android:textSize="30dp"
+
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="Other Events"
+                android:layout_marginTop="30dp"
+                android:id="@+id/imageView2"
+                android:textSize="30dp"
+                android:radius="10dp"
+                android:background="@drawable/round"
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:textColor="#ffffff" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="Contacts"
+                android:layout_marginTop="30dp"
+                android:id="@+id/imageView3"
+                android:textSize="30dp"
+                android:radius="10dp"
+                android:background="@drawable/round"
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:text="SMS"
+            android:layout_marginTop="30dp"
+            android:id="@+id/imageView4"
+            android:textSize="30dp"
+            android:radius="10dp"
+            android:background="@drawable/round"
+            android:padding="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</RelativeLayout>

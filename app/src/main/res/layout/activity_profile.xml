@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.delevere.cbook.Profile">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profiletoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/profiletoolbar">
+
+
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+    >
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/profile"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pname"
+        android:text="Name"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+
+        android:textSize="15dp"
+        android:textColor="#0587bb" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:padding="2dp"
+        android:id="@+id/profilename"
+        android:text="Profile Name"
+        android:textColor="#010101" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pname"
+            android:background="#e2e2e2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pphone"
+        android:text="Mobile "
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/profilename"
+        android:textSize="15dp"
+        android:textColor="#0587bb" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pphone"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20dp"
+
+        android:clickable="true"
+        android:padding="2dp"
+        android:id="@+id/profilephone"
+        android:text="Phone Number"
+        android:textColor="#010101" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pphone"
+            android:background="#e2e2e2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbirthday"
+            android:text="Birthday "
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/profilename"
+            android:textSize="15dp"
+            android:textColor="#0587bb" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pphone"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:textSize="20dp"
+            android:layout_marginRight="100dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:id="@+id/profilebirthday"
+            android:text="Date of Birth"
+            android:textColor="#010101" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:layout_marginLeft="-50dp"
+            android:id="@+id/birthdaybutton"
+            android:background="@drawable/button" />
+
+    </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pphone"
+            android:background="#e2e2e2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/referimage"
+            android:src="@drawable/refer"
+            android:layout_gravity="center" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sign Out"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/profilesingout"
+            android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_error"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/contactus"
+            android:padding="10dp"
+            android:background="@drawable/button"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>

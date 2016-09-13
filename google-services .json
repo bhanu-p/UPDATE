@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "407148055522",
+    "firebase_url": "https://cbook-f44ed.firebaseio.com",
+    "project_id": "cbook-f44ed",
+    "storage_bucket": "cbook-f44ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407148055522:android:b7c7fe98a3e21525",
+        "android_client_info": {
+          "package_name": "com.example.delevere.cbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407148055522-n9ksrt8fu29knri9362urt7ik3cq7us3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaavfoKfOGI1i9y_D9sARZhPlp7Gl0J6c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

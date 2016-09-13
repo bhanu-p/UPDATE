@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "158323689849",
+    "project_id": "gcmapp-dd0ab"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158323689849:android:963ffadc8b4a4468",
+        "android_client_info": {
+          "package_name": "com.example.delevere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBljiJlep46whk2rZ43snIn7aMCkSJRwC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

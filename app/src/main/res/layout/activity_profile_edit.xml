@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.delevere.cbook.ProfileEdit">
+
+    <ImageView
+        android:id="@+id/profileimageedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/profile"
+        />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profiletoolbaredit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/profileimageedit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:paddingTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pnameedit"
+            android:text="Name"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/profileimageedit"
+            android:textSize="15dp"
+            android:textColor="#0587bb" />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pnameedit"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:textSize="20dp"
+            android:clickable="true"
+            android:padding="2dp"
+            android:id="@+id/profilenameedit"
+             />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/pnameedit"
+            android:background="#ffffffff" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pphoneedit"
+            android:text="Mobile "
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/profilenameedit"
+            android:textSize="15dp"
+            android:textColor="#0587bb" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pphoneedit"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:textSize="20dp"
+
+            android:clickable="true"
+            android:padding="2dp"
+            android:id="@+id/profilephoneedit"
+             />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/pphoneedit"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbirthdayedit"
+            android:text="Birthday "
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/profilenameedit"
+            android:textSize="15dp"
+            android:textColor="#0587bb" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pphoneedit"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:textSize="20dp"
+                android:layout_marginRight="100dp"
+                android:clickable="true"
+                android:padding="2dp"
+                android:id="@+id/profilebirthdayedit"
+                 />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:layout_marginLeft="-50dp"
+                android:id="@+id/birthdaybuttonedit" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/pphoneedit"
+            android:background="#ffffffff" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

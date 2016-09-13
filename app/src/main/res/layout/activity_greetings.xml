@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+
+    android:layout_margin="15dp"
+    tools:context="com.example.delevere.cbook.Greetings"
+    android:background="#ffffffff"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/greetingname"
+        android:layout_marginLeft="5dp"
+        android:textColor="#0587bb"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/greetingname"
+
+        android:background="#0587bb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:enabled="false"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/greetname"
+        android:layout_below="@+id/greetingname"
+
+
+
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:textColor="#010101" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Message"
+        android:id="@+id/Message"
+        android:layout_below="@+id/greetname"
+        android:textColor="#0587bb"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Message"
+        android:background="#0587bb" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Wishing You a SUCCESSFUL and
+DELIGHTFUL Happy Birthday,
+Loaded With Full of LOVE,
+BLESSINGS from ur Close ones
+Have a wonderful Day.
+HAPPY BIRTHDAY"
+        android:enabled="false"
+        android:id="@+id/greetmessage"
+        android:layout_below="@+id/Message"
+        android:editable="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="5dp"
+        android:textColor="#010101" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greetmessage"
+        android:layout_alignParentLeft="true"
+        android:text="Send"
+        android:id="@+id/greetingbuttonsend"
+        android:background="#0587bb"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffffff"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greetmessage"
+        android:layout_alignParentRight="true"
+        android:text="Cancel"
+        android:id="@+id/greetingbuttoncancle"
+        android:layout_marginBottom="5dp"
+        android:background="#0587bb"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffffff"
+        />
+
+</RelativeLayout>

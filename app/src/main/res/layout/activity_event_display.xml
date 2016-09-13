@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.delevere.cbook.EventDisplay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/eventdisplaytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_below="@+id/eventdisplaytoolbar">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/evnimage"
+
+            android:src="@drawable/logo_event"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Greetings"
+        android:id="@+id/greetingbutton"
+
+        android:textColor="#ffffffff"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/evnimage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Name "
+            android:textColor="#0587bb"
+            android:padding="3dp"
+            android:id="@+id/textView"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+
+            android:layout_below="@+id/textView"
+            android:background="#0587bb" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Name"
+        android:id="@+id/evnname"
+            android:enabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+
+        android:layout_gravity="left"
+            android:elegantTextHeight="true"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Person "
+            android:id="@+id/textView2"
+            android:textColor="#0587bb"
+            android:layout_marginTop="20dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textView2"
+
+            android:background="#0587bb" />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Person"
+            android:enabled="false"
+        android:id="@+id/evnphone"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView2"
+
+
+        android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:textColor="#010101" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Date "
+            android:id="@+id/textView3"
+            android:textColor="#0587bb"
+            android:layout_marginTop="20dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textView3"
+
+            android:background="#0587bb" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event Date"
+            android:enabled="false"
+        android:id="@+id/evntime"
+        android:layout_below="@+id/evnphone"
+
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_gravity="left"
+            android:textColor="#010101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Event Created "
+            android:id="@+id/textView4"
+            android:textColor="#0587bb"
+            android:layout_marginTop="20dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textView3"
+            android:background="#0587bb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event Date"
+            android:id="@+id/evncreated"
+            android:layout_below="@+id/evnphone"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:textColor="#010101" />
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">C Book</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password </string>
+    <string name="prompt_newpassword">New Password </string>
+    <string name="prompt_conformpassword">Confirm Password </string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_phone">This Phone Number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_phone">Phone</string>
+    <string name="title_activity_register">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="title_activity_forgot_password">Sign in</string>
+    <string name="title_activity_update_password">Sign in</string>
+    <string name="action_next">Next</string>
+    <string name="contacts">Contacts</string>
+    <string name="logout">Logout</string>
+    <string name="refer_frined">Refer to Friend</string>
+    <string name="profile">My Profile</string>
+    <string name="my_events">my events</string>
+    <string name="friends_events">friends events</string>
+    <string name="sms">Send SMS</string>
+    <string name="chat">Chat</string>
+    <string name="hintTxtItem">Enter text</string>
+    <string name="action_record">search</string>
+    <string name="action_search">searching</string>
+    <string name="prompt_otp">OTP</string>
+    <string name="error_invalid_otp">Six Digits</string>
+    <string name="message_box_title">Title</string>
+    <string name="message_timesheet_not_up_to_date">Wishes</string>
+    <string name="refresh">Refresh</string>
+
+
+    <string name="event_type_prompt">Select</string>
+    <string name="error_password_mismatch">Passwords are not match!</string>
+    <string name="Export">Export To SDCard</string>
+    <string name="deleteevent">Delete event</string>
+    <string name="editevent">Edit event</string>
+    <string name="search">Search</string>
+    <string name="notsave">Don\'t save</string>
+    <string name="save">Save</string>
+    <string name="add">Add Event</string>
+    <string name="send">Send</string>
+    <string name="report_error">Report Error</string>
+    <string name="deletedcontacts">Deleted Contacts</string>
+    <string name="event">Events</string>
+    <string name="friends">Friends</string>
+
+
+</resources>
