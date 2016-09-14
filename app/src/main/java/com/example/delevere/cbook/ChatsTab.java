@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -21,7 +23,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -33,6 +37,10 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
 
 public class ChatsTab extends Fragment {
 
@@ -59,6 +67,8 @@ public class ChatsTab extends Fragment {
         db = new DataBaseHelper(getContext());
         displayFriends();
         getbroadcastevents();
+
+
 
         new Thread(new Runnable() {
             public void run() {
@@ -134,6 +144,10 @@ public class ChatsTab extends Fragment {
         displayFriends();
 
     }
+    public int getRandomColor(){
+        Random rnd = new Random();
+        return Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+    }
 
     private void displayFriends() {
         Cursor cursor = db.getAllFriends();
@@ -150,10 +164,12 @@ public class ChatsTab extends Fragment {
                 R.id.hideid,
                 R.id.listcontactname,
                 R.id.listcontactnumber,
+
         };
 
         // create the adapter using the cursor pointing to the desired data
         //as well as the layout information
+
 
         dataAdapter = new SimpleCursorAdapter(
                 this.getContext(), R.layout.contacts_list,

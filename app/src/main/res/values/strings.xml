@@ -54,6 +54,7 @@
     <string name="deletedcontacts">Deleted Contacts</string>
     <string name="event">Events</string>
     <string name="friends">Friends</string>
+    <string name="submit">Submit</string>
 
 
 </resources>

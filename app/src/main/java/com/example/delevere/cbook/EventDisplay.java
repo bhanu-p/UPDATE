@@ -269,25 +269,6 @@ public class EventDisplay extends AppCompatActivity {
                 //startActivity(new Intent(getApplicationContext(),ReferActivity.class));
                 return true;
             }
-            case R.id.logout: {
-                Toast.makeText(this, "Try to Logout", Toast.LENGTH_SHORT).show();
-                //SharedPreferences settings = getSharedPreferences(SessionCreator.PREFS_NAME, 0);
-                //SharedPreferences.Editor editor = settings.edit();
-                //editor.remove("logged");
-                //editor.commit();
-                //finish();
-                SharedPreferences settings = this.getSharedPreferences(PREFS_NAME, 0);
-                SharedPreferences.Editor editor = settings.edit();
-                editor.remove("logged");
-                editor.clear();
-                editor.commit();
-                db.truncatstudent();
-                db.truncatevents();
-                startActivity(new Intent(this, LoginActivity.class));
-                return true;
-
-            }
-
 
 
         }return false;

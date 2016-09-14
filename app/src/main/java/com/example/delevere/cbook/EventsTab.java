@@ -43,6 +43,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 
 public class EventsTab extends Fragment {
     public static final String PREFS_NAME = "LoginPrefs";
@@ -143,13 +144,19 @@ public class EventsTab extends Fragment {
                     int imageToBeShown = 0;
                     switch (imageType) {
                         case "R.drawable.bday":
+                            int[] bday={R.drawable.bday,R.drawable.bday2,R.drawable.bday3,R.drawable.bday4,R.drawable.bday5};
+                            //imageToBeShown = bday[new Random().nextInt(bday.length)];
                             imageToBeShown = R.drawable.bday;
                             break;
                         case "R.drawable.anniversary":
+                            int[] anny = {R.drawable.anniversary,R.drawable.anniversary2,R.drawable.anniversary3,R.drawable.anniversary4,R.drawable.anniversary5};
+                            //imageToBeShown = anny[new Random().nextInt(anny.length)];
                             imageToBeShown = R.drawable.anniversary;
                             break;
                         case "R.drawable.events":
-                            imageToBeShown = R.drawable.events;
+                            int[] evnt= {R.drawable.eventsold,R.drawable.events2,R.drawable.events3,R.drawable.events4,R.drawable.events5};
+                            //imageToBeShown = evnt[new Random().nextInt(evnt.length)];
+                            imageToBeShown = R.drawable.eventsold;
                             break;
 
                     }
@@ -180,7 +187,7 @@ public class EventsTab extends Fragment {
                     SharedPreferences sharedPreferences = getActivity().getSharedPreferences(Session.PREFS_NAME,0);
                     String phonelocal = sharedPreferences.getString(Session.KEY_phone, "9999999999");
                     String created =cursor.getString(cursor.getColumnIndexOrThrow("created_by"));
-                    String status = "By:";
+                    String status = "Created:";
                     String name = "";
                     //Toast.makeText(getActivity(), created.toString(), Toast.LENGTH_SHORT).show();
                     //Cursor cur = db.getContactName(created);

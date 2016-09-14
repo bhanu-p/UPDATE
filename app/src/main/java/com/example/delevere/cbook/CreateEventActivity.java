@@ -192,14 +192,9 @@ public class CreateEventActivity extends AppCompatActivity {
                     } else if (onlyme_check.isChecked()) {
                         event_permission = "0";
                     }
-                    if (cal.compareTo(current) <= 0) {
-                        //The set Date/Time already passed
-                        Toast.makeText(getApplicationContext(),
-                                "Select Correct Date/Time",
-                                Toast.LENGTH_LONG).show();
-                    } else {
+
                         //Toast.makeText(CreateEventActivity.this, cal.toString(), Toast.LENGTH_SHORT).show();
-                        setAlarm(cal);
+
                         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                         String formattedDate = df.format(cal.getTime());
 
@@ -218,7 +213,7 @@ public class CreateEventActivity extends AppCompatActivity {
                         String sevent_phone = phone_number.getText().toString();
                         String sevent_name = event_name.getText().toString();
                         String sevent_date = formattedDate;
-
+                    setAlarm(cal);
 
                         //Toast.makeText(CreateEventActivity.this, phonelocal, Toast.LENGTH_SHORT).show();
                         String type = "event";
@@ -226,8 +221,8 @@ public class CreateEventActivity extends AppCompatActivity {
                         userLoginTask.execute(type, phonelocal, sevent_phone, sevent_name, sevent_date, event_type_string.toString(), event_permission.toString());
 
                         Intent i = new Intent(getApplicationContext(), Home2Activicy.class);
-                        startActivity(i);
-                    }
+                    startActivity(i);
+
                 }
 
             }});

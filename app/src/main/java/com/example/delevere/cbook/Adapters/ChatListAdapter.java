@@ -35,10 +35,11 @@ public class ChatListAdapter extends FirebaseListAdapter<Chat> {
         if (num.equals(number)) {
 			dbase.timeStamp2(sender, chat.getSent_time());
         	ch.setText(chat.getMessage());
-        	ch.setBackgroundResource(R.drawable.bubble_a);
-        	ch.setGravity(Gravity.RIGHT);
 
-        	sent.setText(chat.getSent_time());
+        	ch.setGravity(Gravity.RIGHT);
+			ch.setBackgroundResource(R.drawable.bubble_a);
+			sent.setGravity(Gravity.RIGHT);
+			sent.setText(chat.getSent_time());
         	sent.setTextSize(11);
 
         }
@@ -47,9 +48,9 @@ public class ChatListAdapter extends FirebaseListAdapter<Chat> {
 			//if (cm.addNewRecord(num, chat.getSent_time(), sender, , input)) {
 			dbase.timeStamp2(sender,chat.getSent_time());
         	ch.setText(chat.getMessage());
-        	ch.setBackgroundResource(R.drawable.bubble_b);
         	ch.setGravity(Gravity.LEFT);
-			sent.setGravity(Gravity.RIGHT);
+			ch.setBackgroundResource(R.drawable.bubble_b);
+			sent.setGravity(Gravity.LEFT);
         	sent.setText(chat.getSent_time());
         	sent.setTextSize(11);
         }
